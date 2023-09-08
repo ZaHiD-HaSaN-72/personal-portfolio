@@ -10,5 +10,5 @@ cursor.style.display = "block";
 function mouseStopped(){
     cursor.style.display = "none"
 }
-timeout = setTimeout(mouseStopped, 400);
+timeout = setTimeout(mouseStopped, 1000);
 })
