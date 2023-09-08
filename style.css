@@ -126,6 +126,8 @@ body{
     text-transform: uppercase;
     letter-spacing: 1px;
     margin: 0 5px;
+    text-decoration: none;
+    color: white;
 }
 /* background animation */
 .bg-img{
@@ -137,7 +139,7 @@ body{
     position: fixed;
     height: 200px;
     width: 200px;
-    background: linear-gradient(red,yellow,rgb(36, 230, 36) ,rgb(52, 213, 228));
+    background: linear-gradient(rgb(227, 14, 135),rgb(248, 242, 59),rgb(255, 109, 41) ,rgb(82, 239, 245));
     border-radius: 50%;
     box-shadow: 0px 0px 50px rgb(22, 248, 172);
     display: none;
@@ -149,11 +151,12 @@ body{
 /* about start */
 .about-me{
     max-width: 90%;
-    background-color: rgba(24, 50, 63, 0.41);
+    background-color: rgba(24, 50, 63, 0.225);
     height: 700px;
     margin: 20px auto 0 auto;
     border-radius: 20px;
-    box-shadow: 5px 5px 20px black;
+    box-shadow: 2px 2px 15px black;
+    
     
 }
 .about-me>h1{
@@ -165,12 +168,16 @@ body{
 }
 .about-content{
     max-width: 900px;
-    background-color: rgba(19, 61, 40, 0.23);
+    background-color: rgba(19, 61, 40, 0.181);
     height: 550px;
     padding: 70px 100px;
     margin: 50px auto;
     border-radius: 20px;
-    box-shadow: 5px 5px 20px black;
+    box-shadow: 2px 2px 20px black;
+    box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.277),
+    inset 5px 5px 10px  rgba(5, 5, 5, 0.3),
+    inset 5px 5px 20px  rgba(25, 101, 76, 0.2),
+    inset -5px -5px 15px rgba(23, 50, 42, 0.497);
 }
 .about-content>p{
     font-size: 20px;
@@ -184,3 +191,82 @@ body{
 
 }
 /* about end */
+/* contact start */
+.contact-me >h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+    padding-top: 20px;
+}
+.contact-me>p{
+    text-align: center;
+    font-size: 17px;
+}
+.contact-content{
+    display: flex;
+    max-width: 70%;
+    background-color: rgba(226, 229, 227, 0);
+    height: 550px;
+    padding: 40px 50px;
+    margin: 50px auto;
+    border-radius: 20px;
+}
+.left-section{
+    width: 50%;
+    
+ 
+
+}
+.left-section>a{
+ 
+  font-size: 50px;
+  text-decoration: none;
+   margin-top: 40px;
+   color: aliceblue;
+}
+.logo{
+font-size: 20px;
+position: absolute;
+margin-left: 10px;
+font-weight: 600;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+.right-section{
+width: 50%;
+background-color:rgba(255, 228, 196, 0.3) ;
+border-radius: 10px;
+padding-top: 20px;
+padding-left: 20px;
+}
+.right-section>h2{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.right-section>input{
+    height: 40px;
+}
+.right-section>input,textarea{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+   
+}
+.right-section>a{
+    text-decoration: none;
+    color: rgb(1, 1, 1);
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgb(57, 216, 208);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    
+   
+}
+/* contact end */
