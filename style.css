@@ -121,6 +121,25 @@ body{
     font-size: 20px;
     font-weight: 600;
 }
+
+.btn-box>a:hover{
+   box-shadow:-2px -1px 10px rgb(56, 217, 171) ;
+   transition: 0.4s;
+   background: transparent;
+   color: rgb(57, 216, 208);
+   border: 1px solid rgb(57, 216, 208);
+   
+   
+}
+.send-btn:hover{
+   box-shadow:-2px -1px 10px rgb(56, 217, 171) ;
+   transition: 0.4s;
+   background: transparent;
+   color: rgb(57, 216, 208);
+   border: 1px solid rgb(57, 216, 208);
+   
+   
+}
 .footer-box{
    
     background-color: rgba(0, 0, 0, 0.434);
@@ -220,10 +239,10 @@ body{
     height: 550px;
     border-radius: 20px;
     box-shadow: 2px 2px 20px black;
-    box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.277),
-    inset 5px 5px 10px  rgba(5, 5, 5, 0.3),
-    inset 5px 5px 20px  rgba(25, 101, 76, 0.2),
-    inset -5px -5px 15px rgba(23, 50, 42, 0.497);
+    box-shadow: -2px -1px 60px rgba(0, 0, 0, 0.277),
+    inset -2px -1px 15px  rgba(5, 5, 5, 0.3),
+    inset -2px -1px 25px  rgba(25, 101, 76, 0.2),
+    inset -2px -1px 25px rgba(23, 50, 42, 0.497);
 }
 .about-content>p{
     font-size: 20px;
