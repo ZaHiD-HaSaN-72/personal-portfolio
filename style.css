@@ -13,12 +13,21 @@ body{
 }
 
 .navbar{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
     padding-top: 40px;
     background-color: transparent;
+    z-index: 100;
+    position: fixed;
+    background-color: rgb(24, 56, 49);
+}
+#menu-icon{
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
 }
 .navbar>h2{
     margin-left: 100px;
@@ -42,10 +51,13 @@ body{
 .nav-item a:hover{
    color: cornflowerblue;
 }
+
+
 .banner-box{
     display: flex;
     justify-content: center;
     align-items: center;
+   padding-top: 5rem;
     
 }
 .banner{
@@ -53,7 +65,7 @@ body{
    align-items: center;
     justify-content: center;
     height: 700px; 
-  background-color: a;
+  
    width:  100%;
    
 }
@@ -82,12 +94,14 @@ body{
 .banner-right{
     height: 700px;
     width: 50%;
-    background:url(jahid.png) ;
+    background:url(images/jahid.png) ;
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 550px;
+    filter: brightness(70%);
    
 }
+
 .mypng{
     max-height: 500px;
 }
@@ -151,7 +165,7 @@ body{
 }
 /* background animation */
 .bg-img{
-    background: url(Untitled-1.png);
+    background: url(images/Untitled-1.png);
    background-size: cover; 
 }
 
@@ -176,6 +190,7 @@ body{
     gap: 20px;
 }
 .about-me{
+    margin-top: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -228,7 +243,7 @@ body{
 /* about end */
 /* contact start */
 .contact-me{
-    padding-top: 50px;
+    padding-top: 150px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -290,11 +305,7 @@ padding-left: 20px;
 box-shadow: -1px -1px 5px rgba(9, 9, 9, 0.574);
 }
 .right-section:hover{
-width: 50%;
-background-color: rgba(24, 50, 63, 0.225);
-border-radius: 10px;
-padding-top: 20px;
-padding-left: 20px;
+
 box-shadow: -2px -1px 30px rgba(9, 9, 9, 0.574);
 transition: 0.5s;
 }
@@ -328,12 +339,16 @@ transition: 0.5s;
 }
 /* contact end */
 /* service start */
+.services{
+    padding-top: 150px;
+}
 .service-box{
     height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 50px;
+   
 }
 .services>h1{
     text-align: center;
@@ -370,6 +385,58 @@ transition: 0.5s;
     }
 }
 @media only screen and (max-width:600px){
+    .nav-item{
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 10px 20px;
+        background-color: rgb(47, 120, 104);
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.314);
+        transition: 0.25s ease;
+        transition-delay: 0.25s;
+
+    }
+    .nav-item.active{
+        transition-delay: 0s;
+        left: 0;
+    }
+    .nav-item>a{
+        display: block;
+        margin: 30px 0;
+    }
+    #menu-icon{
+        display: block;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        height: 800px;
+    }
+    .banner-right{
+        height: 340px;
+        background-size: 400px;
+        border: 2px solid black;
+        border-radius: 50%;
+        width: 300px;
+    }
+    .banner-right:hover{
+        box-shadow: -2px -1px 20px rgb(215, 111, 235);
+        transition: 0.4s;
+    }
+    .banner-left{
+        width: 100%;
+        padding:0 20px ;
+        
+       }
+       .banner-left>h1{
+        font-size: 35px;
+       }
+       .banner-left>h3{
+        font-size: 26px;
+       }
+       .banner-left>p{
+        font-size: 17px;
+       }
     .contact-content{
         flex-direction: column;
         padding: 0;

@@ -1,3 +1,13 @@
+var menuIcon = document.querySelector('#menu-icon');
+var navbar = document.querySelector('.nav-item');
+
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle("bx-x");
+    navbar.classList.toggle("active");
+}
+
+
 const cursor = document.getElementById('cursor');
 var timeout;
 document.addEventListener('mousemove' , function(e){
