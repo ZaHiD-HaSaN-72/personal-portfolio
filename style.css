@@ -96,9 +96,11 @@ body{
     width: 50%;
     background:url(images/jahid.png) ;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: bottom ;
     background-size: 550px;
-    filter: brightness(70%);
+    margin-bottom: 200px;
+    
+    /* filter: brightness(70%); */
    
 }
 
@@ -128,6 +130,7 @@ body{
    background: transparent;
    color: rgb(57, 216, 208);
    border: 1px solid rgb(57, 216, 208);
+   backdrop-filter: blur(2px);
    
    
 }
@@ -144,6 +147,7 @@ body{
    
     background-color: rgba(0, 0, 0, 0.434);
     height: 250px;
+    backdrop-filter: blur(3px);
 }
 .footer-icon{
     height: 150px;
@@ -220,6 +224,7 @@ body{
     height: 700px;
     border-radius: 20px;
     box-shadow: 2px 2px 15px black;
+    backdrop-filter:blur(2px) ;
 }
 .about-me>h1{
     
@@ -322,6 +327,7 @@ border-radius: 10px;
 padding-top: 20px;
 padding-left: 20px;
 box-shadow: -1px -1px 5px rgba(9, 9, 9, 0.574);
+backdrop-filter: blur(2px);
 }
 .right-section:hover{
 
@@ -382,6 +388,22 @@ transition: 0.5s;
     font-size: 17px;
     max-width: 900px;
 }
+.service-content{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+.service-content> div{
+    
+    height: 330px;
+    width: 230px;
+    background-color:rgba(28, 112, 97, 0.402) ;
+    box-shadow: 0 0 15px rgba(10, 11, 11, 0.715);
+   backdrop-filter: blur(2px);
+   border-radius: 3px;
+}
 /* service end */
 
 /* Responsive start */
@@ -409,6 +431,9 @@ transition: 0.5s;
     .nav-item {
         margin-right: 50px;
     }
+    .service-box{
+        height: 700px;
+    }
 }
 @media only screen and (max-width:600px){
     .navbar{
@@ -423,11 +448,11 @@ transition: 0.5s;
         left: -100%;
         width: 100%;
         padding: 10px 20px;
-        background-color: rgb(47, 120, 104);
+        background-color: rgba(83, 31, 204, 0.059);
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.314);
         transition: 0.25s ease;
         transition-delay: 0.25s;
-
+        backdrop-filter: blur(3px);
     }
     .nav-item.active{
         transition-delay: 0s;
@@ -450,9 +475,13 @@ transition: 0.5s;
         border: 2px solid black;
         border-radius: 50%;
         width: 300px;
+        background-image: url(images/jahid1.png);
+        backdrop-filter: blur(2px);
+        
+     
     }
     .banner-right:hover{
-        box-shadow: -2px -1px 20px rgb(215, 111, 235);
+        box-shadow: -2px -1px 20px rgb(42, 255, 216);
         transition: 0.4s;
     }
     .banner-left{
@@ -492,8 +521,16 @@ transition: 0.5s;
     .about-content>p{
         font-size: 18px;
     }
+    .service-box{
+        height: 700px;
+    }
     .footer-box {
         background-color: rgba(0, 0, 0, 0.434);
         height: 445px;
+    }
+}
+@media only screen and (max-width:490px){
+    .service-box{
+        height: 1065px;
     }
 }
