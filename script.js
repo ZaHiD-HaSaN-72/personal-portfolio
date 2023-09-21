@@ -22,3 +22,14 @@ function mouseStopped(){
 }
 timeout = setTimeout(mouseStopped, 1000);
 })
+
+
+const toggleButtons = document.querySelectorAll('.toggle-info');
+
+toggleButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const details = button.previousElementSibling;
+        details.style.display = details.style.display === 'none' ? 'block' : 'none';
+        button.textContent = details.style.display === 'none' ? 'See Details' : 'Hide Details';
+    });
+});

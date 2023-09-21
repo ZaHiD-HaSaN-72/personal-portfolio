@@ -23,6 +23,7 @@ body{
     z-index: 100;
     position: fixed;
     background-color: rgb(24, 56, 49);
+    
 }
 #menu-icon{
     font-size: 3rem;
@@ -39,7 +40,7 @@ body{
 }
 .nav-item{
     margin-right: 100px;
-   
+    
 }
 .nav-item a{
     margin-left: 30px;
@@ -130,7 +131,7 @@ body{
    background: transparent;
    color: rgb(57, 216, 208);
    border: 1px solid rgb(57, 216, 208);
-   backdrop-filter: blur(2px);
+   backdrop-filter: blur(5px);
    
    
 }
@@ -246,7 +247,7 @@ body{
     box-shadow: 2px 2px 20px black;
     box-shadow: -2px -1px 60px rgba(0, 0, 0, 0.277),
     inset -2px -1px 15px  rgba(5, 5, 5, 0.3),
-    inset -2px -1px 25px  rgba(25, 101, 76, 0.2),
+    inset -2px -1px 25px  rgba(17, 40, 32, 0.2),
     inset -2px -1px 25px rgba(23, 50, 42, 0.497);
 }
 .about-content>p{
@@ -257,9 +258,14 @@ body{
     
     
 }
-.about-content>h3{
-    margin-top: 100px;
-    font-size: 25px;
+.myinfo{
+   margin-top: 50px;
+   width: 100%;
+   padding-left: 50px;
+}
+.about-content, .myinfo h3{
+    margin-top: 30px;
+    font-size: 1.5rem;
     font-weight: 600;
   
 
@@ -283,6 +289,7 @@ body{
 .contact-me>p{
     text-align: center;
     font-size: 17px;
+    margin: 30px;
 }
 .contact-content{
     display: flex;
@@ -327,7 +334,7 @@ border-radius: 10px;
 padding-top: 20px;
 padding-left: 20px;
 box-shadow: -1px -1px 5px rgba(9, 9, 9, 0.574);
-backdrop-filter: blur(2px);
+backdrop-filter: blur(5px);
 }
 .right-section:hover{
 
@@ -391,23 +398,137 @@ transition: 0.5s;
 .service-content{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    
+    gap: 40px;
     flex-wrap: wrap;
     
 }
 .service-content> div{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 330px;
     width: 230px;
-    background-color:rgba(28, 112, 97, 0.402) ;
-    box-shadow: 0 0 15px rgba(10, 11, 11, 0.715);
-   backdrop-filter: blur(2px);
-   border-radius: 3px;
+    background-color:rgba(83, 31, 204, 0.059);
+    box-shadow: 0 0 10px rgba(10, 11, 11, 0.715);
+   backdrop-filter: blur(5px);
+   border-radius: 6px;
+   filter: drop-shadow(0 0 20 black);
+}
+.service-content> div:hover{
+   transition: 0.3s;
+   box-shadow: 0 0 20px black;
+}
+.service-content div i{
+    font-size: 150px;
+    color: rgb(255, 204, 0);
+    background-color:rgba(24, 72, 52, 0.993) ;
+    border-radius: 50%;
+    box-shadow: 0 0 10px black;
+}
+.service-content div i:hover{
+    transition: 0.5s;
+   box-shadow: 0 0 20px rgb(235, 215, 66);
+   
+   color: rgb(255, 191, 0);
 }
 /* service end */
 
+
+/* education start */
+
+#education {
+    margin-top: 40px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(24, 50, 63, 0.225);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#education:hover{
+    box-shadow: 0 0 20px rgba(7, 7, 7, 0.689);
+    transition: 0.5s;
+}
+
+
+.education-entry {
+    background-color: rgba(19, 61, 40, 0.181);
+    border: 2px solid #e1e1e14d;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.education-details {
+    display: none;
+}
+
+.toggle-info {
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-info:hover {
+    background-color: #0056b3;
+}
+
+/* Unique Design Styles */
+
+
+.education-entry:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.education-details h3 {
+    font-size: 2.2rem;
+    color: #ffffff;
+}
+
+.education-details p {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.education-entry::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #1982f38e, #0b4e9580); 
+    transform: scale(0);
+    transform-origin: bottom left;
+    z-index: -1;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.education-entry:hover::before {
+    transform: scale(1);
+    opacity: 0.3;
+}
+.education-box{
+    height:700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+/* education end */
 /* Responsive start */
-@media only screen and (max-width:850px){
+@media only screen and (max-width:880px){
     .navbar{
         padding-top: 22px;
     }
@@ -415,6 +536,62 @@ transition: 0.5s;
         font-size: 30px;
 
     }
+    .nav-item{
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 10px 20px;
+        background-color: rgba(83, 31, 204, 0.059);
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.314);
+        transition: 0.25s ease;
+        transition-delay: 0.25s;
+        backdrop-filter: blur(5px);
+    }
+    .nav-item.active{
+        transition-delay: 0s;
+        left: 0;
+    }
+    .nav-item>a{
+        display: block;
+        margin: 30px 0;
+    }
+    #menu-icon{
+        display: block;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        height: 1000px;
+    }
+    .banner-right{
+        height:340px;
+        background-size: 400px;
+        border: 2px solid black;
+        border-radius: 50%;
+        width: 300px;
+        background-image: url(images/jahid1.png);
+        backdrop-filter: blur(2px);
+        margin-bottom: 20px;
+     
+    }
+    .banner-right:hover{
+        box-shadow: -2px -1px 20px rgb(42, 255, 216);
+        transition: 0.4s;
+    }
+    .banner-left{
+        width: 100%;
+        padding:0 50px ;
+        
+       }
+       .banner-left>h1{
+        font-size: 35px;
+       }
+       .banner-left>h3{
+        font-size: 26px;
+       }
+       .banner-left>p{
+        font-size: 17px;
+       }
     .left-section, .right-section{
         width: 100%;
     }
@@ -434,10 +611,14 @@ transition: 0.5s;
     .service-box{
         height: 700px;
     }
+    .services>p{
+        margin: 30px;
+    }
 }
 @media only screen and (max-width:600px){
     .navbar{
         padding-top: 22px;
+       
     }
     .navbar>h2{
         font-size: 35px;
@@ -452,7 +633,7 @@ transition: 0.5s;
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.314);
         transition: 0.25s ease;
         transition-delay: 0.25s;
-        backdrop-filter: blur(3px);
+        backdrop-filter: blur(5px);
     }
     .nav-item.active{
         transition-delay: 0s;
@@ -467,17 +648,17 @@ transition: 0.5s;
     }
     .banner{
         flex-direction: column-reverse;
-        height: 800px;
+        height: 1000px;
     }
     .banner-right{
-        height: 340px;
+        height:340px;
         background-size: 400px;
         border: 2px solid black;
         border-radius: 50%;
         width: 300px;
         background-image: url(images/jahid1.png);
         backdrop-filter: blur(2px);
-        
+        margin-bottom: 20px;
      
     }
     .banner-right:hover{
@@ -514,13 +695,18 @@ transition: 0.5s;
     .about-content{
         width: 100%;
     }
-    .about-content>h3{
-        font-size: 20px;
-        margin-top: 55px;
+    .about-content,.myinfo h3{
+        font-size: 1.1rem;
+        margin-top: 15px;
     }
     .about-content>p{
         font-size: 18px;
     }
+    .myinfo{
+        margin-top: 20px;
+        width: 100%;
+        padding-left: 0px;
+     }
     .service-box{
         height: 700px;
     }
