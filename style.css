@@ -188,23 +188,31 @@ body{
     color: white;
 }
 /* background animation */
-.bg-img{
-    background: url(images/Untitled-1.png);
-   background-size: cover; 
-}
+
 
 #cursor{
     position: fixed;
-    height: 200px;
-    width: 200px;
-    background: linear-gradient(rgb(227, 14, 135),rgb(248, 242, 59),rgb(255, 109, 41) ,rgb(82, 239, 245));
+    height: 30px;
+    width: 30px;
+    background: rgb(227, 14, 135);
     border-radius: 50%;
-    box-shadow: 0px 0px 50px rgb(22, 248, 172);
+    box-shadow: 0px 0px 30px rgb(248, 22, 143);
     display: none;
     transform: translate(-50%, -50%);
-    z-index:-1;
-    opacity: 50%;
-    
+    z-index:-5;
+    opacity: 80%;   
+}
+#cursor::before{
+    content: '';
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    background: rgb(227, 14, 135);
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px rgb(248, 22, 143);
+    transform: translate(-14%, -14%);
+    z-index:-5;
+    opacity: 50%;   
 }
 /* background animation */
 /* about start */
@@ -461,9 +469,9 @@ transition: 0.5s;
     overflow: hidden;
 }
 
-.education-details {
-    display: none;
-}
+/* .education-details {
+    
+} */
 
 .toggle-info {
     position: absolute;
@@ -526,7 +534,125 @@ transition: 0.5s;
     align-items: center;
     font-size: 50px;
 }
+.cv-btn{
+    margin-top: 30px;
+   
+    text-decoration: none;
+    color: rgb(1, 1, 1);
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgb(57, 216, 208);
+    font-size: 20px;
+    font-weight: 600;
+}
+.cv-btn:hover{
+    box-shadow:0px 0px 10px rgb(56, 217, 171) ;
+    transition: 0.4s;
+    background: transparent;
+    color: rgb(57, 216, 208);
+    border: 1px solid rgb(57, 216, 208);
+    backdrop-filter: blur(5px);
+    
+    
+ }
 /* education end */
+/* studentInformation */
+.student-info{
+    background-color: rgba(24, 50, 63, 0.225);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width:30rem;
+    padding: 30px;
+    border-radius: 10px;
+    display: block;
+    margin: 70px auto ;
+}
+
+#selectStudent {
+    color: #fdfcfc;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 7px;
+    background: transparent;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+#selectStudent>option{
+    background: #070707a8;
+}
+
+#studentInfo-box {
+    background-color: #091f2a55;
+    border: 1px solid rgba(198, 193, 193, 0.144);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.297);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#studentInfo-box>button{
+    font-size: 15px;
+    color: #0a0b0b;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background: #14daaf;
+
+}
+#studentInfo-box>button:hover{
+    background: transparent;
+    box-shadow: 0 0 15px #14daaf;
+    color: #14daaf;
+    border: 1px solid #14daaf;
+    cursor: pointer;
+}
+.studentImg{
+    height: 100px;
+    margin-top: 20px;
+    border: 2px solid white;
+}
+
+#modalBox{
+    height: 319px;
+    width: 33rem;
+    background-color: #212e3b;
+    border: 1px solid;
+    z-index: 200;
+    position: absolute;
+    border-radius: 12px;
+    padding: 20px;
+    left: 50%;
+    transform: translate(-50%, -30%); 
+    display: none;   
+}
+#modalBox>div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    padding-left: 20px;
+    gap: 15px;
+    height: 255px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+}
+#popupClose{
+    margin-left: 25rem;
+    display: block;
+    padding:5px 10px ;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #e7d8d8;
+    border: 1px solid black;
+    
+}
+/* studentInformation */
 /* Responsive start */
 @media only screen and (max-width:880px){
     .navbar{
@@ -546,6 +672,7 @@ transition: 0.5s;
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.314);
         transition: 0.25s ease;
         transition-delay: 0.25s;
+        -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
     }
     .nav-item.active{
@@ -633,6 +760,7 @@ transition: 0.5s;
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.314);
         transition: 0.25s ease;
         transition-delay: 0.25s;
+        -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
     }
     .nav-item.active{
@@ -657,6 +785,7 @@ transition: 0.5s;
         border-radius: 50%;
         width: 300px;
         background-image: url(images/jahid1.png);
+        -webkit-backdrop-filter: blur(2px);
         backdrop-filter: blur(2px);
         margin-bottom: 20px;
      
@@ -710,13 +839,30 @@ transition: 0.5s;
     .service-box{
         height: 700px;
     }
+    .education-box {
+        
+        height: 50rem;
+       
+    }
     .footer-box {
         background-color: rgba(0, 0, 0, 0.434);
         height: 445px;
+        width: 37rem;
     }
 }
 @media only screen and (max-width:490px){
     .service-box{
         height: 1065px;
+    }
+    .footer-box {
+        width: 30rem;
+    }
+    .education-box {
+        margin-left: 58px;
+        height: 60rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
     }
 }
