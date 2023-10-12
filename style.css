@@ -114,6 +114,7 @@ body{
     display: flex;
     justify-content: space-between;
     width: 300px;
+    align-items: center;
 }
 .btn-box>a{
     text-decoration: none;
@@ -125,12 +126,14 @@ body{
     font-weight: 600;
 }
 
+
 .btn-box>a:hover{
    box-shadow:-2px -1px 10px rgb(56, 217, 171) ;
    transition: 0.4s;
    background: transparent;
    color: rgb(57, 216, 208);
    border: 1px solid rgb(57, 216, 208);
+   -webkit-backdrop-filter: blur(5px);
    backdrop-filter: blur(5px);
    
    
@@ -148,6 +151,7 @@ body{
    
     background-color: rgba(0, 0, 0, 0.434);
     height: 250px;
+    -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
 }
 .footer-icon{
@@ -188,7 +192,10 @@ body{
     color: white;
 }
 /* background animation */
-
+.bg-img{
+    /* background: url(images/Untitled-1.png); */
+   background-size: cover; 
+}
 
 #cursor{
     position: fixed;
@@ -233,7 +240,8 @@ body{
     height: 700px;
     border-radius: 20px;
     box-shadow: 2px 2px 15px black;
-    backdrop-filter:blur(2px) ;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter:blur(3px) ;
 }
 .about-me>h1{
     
@@ -342,6 +350,7 @@ border-radius: 10px;
 padding-top: 20px;
 padding-left: 20px;
 box-shadow: -1px -1px 5px rgba(9, 9, 9, 0.574);
+-webkit-backdrop-filter: blur(5px);
 backdrop-filter: blur(5px);
 }
 .right-section:hover{
@@ -419,6 +428,7 @@ transition: 0.5s;
     width: 230px;
     background-color:rgba(83, 31, 204, 0.059);
     box-shadow: 0 0 10px rgba(10, 11, 11, 0.715);
+    -webkit-backdrop-filter: blur(5px);
    backdrop-filter: blur(5px);
    border-radius: 6px;
    filter: drop-shadow(0 0 20 black);
@@ -447,6 +457,7 @@ transition: 0.5s;
 
 #education {
     margin-top: 40px;
+    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     background-color: rgba(24, 50, 63, 0.225);
     padding: 30px;
@@ -534,9 +545,9 @@ transition: 0.5s;
     align-items: center;
     font-size: 50px;
 }
-.cv-btn{
+.cv2-btn{
     margin-top: 30px;
-   
+   margin-left: 20px;
     text-decoration: none;
     color: rgb(1, 1, 1);
     padding: 10px 20px;
@@ -545,12 +556,13 @@ transition: 0.5s;
     font-size: 20px;
     font-weight: 600;
 }
-.cv-btn:hover{
+.cv2-btn:hover{
     box-shadow:0px 0px 10px rgb(56, 217, 171) ;
     transition: 0.4s;
     background: transparent;
     color: rgb(57, 216, 208);
     border: 1px solid rgb(57, 216, 208);
+    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     
     
@@ -565,6 +577,8 @@ transition: 0.5s;
     border-radius: 10px;
     display: block;
     margin: 70px auto ;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 }
 
 #selectStudent {
@@ -642,7 +656,7 @@ transition: 0.5s;
     width: 100%;
 }
 #popupClose{
-    margin-left: 25rem;
+    margin-left: 85%;
     display: block;
     padding:5px 10px ;
     border-radius: 6px;
@@ -697,7 +711,8 @@ transition: 0.5s;
         border-radius: 50%;
         width: 300px;
         background-image: url(images/jahid1.png);
-        backdrop-filter: blur(2px);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
         margin-bottom: 20px;
      
     }
@@ -744,8 +759,7 @@ transition: 0.5s;
 }
 @media only screen and (max-width:600px){
     .navbar{
-        padding-top: 22px;
-       
+        padding-top: 22px;   
     }
     .navbar>h2{
         font-size: 35px;
@@ -777,6 +791,9 @@ transition: 0.5s;
     .banner{
         flex-direction: column-reverse;
         height: 1000px;
+    }
+    .student-info{
+        width: 25rem;
     }
     .banner-right{
         height:340px;
@@ -847,7 +864,6 @@ transition: 0.5s;
     .footer-box {
         background-color: rgba(0, 0, 0, 0.434);
         height: 445px;
-        width: 37rem;
     }
 }
 @media only screen and (max-width:490px){
@@ -855,10 +871,19 @@ transition: 0.5s;
         height: 1065px;
     }
     .footer-box {
-        width: 30rem;
+       width: 100vw;
+    }
+    .student-info{
+        width: 100vw;
+    }
+    #modalBox{
+        width: 100vw;
+    }
+    #popupClose{
+
     }
     .education-box {
-        margin-left: 58px;
+        width: 100vw;
         height: 60rem;
         display: flex;
         justify-content: center;
