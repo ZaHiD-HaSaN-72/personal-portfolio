@@ -148,11 +148,15 @@ body{
    
 }
 .footer-box{
-   
+    margin-top: 20px;
+    padding-top: 30px;
     background-color: rgba(0, 0, 0, 0.434);
-    height: 250px;
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
+}
+.footer-box>h1{
+    text-align: center;
+    font-weight: bold;
 }
 .footer-icon{
     height: 150px;
@@ -234,10 +238,10 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 50px 0;
     gap: 20px;
    width: 90%;
     background-color: rgba(24, 50, 63, 0.225);
-    height: 700px;
     border-radius: 20px;
     box-shadow: 2px 2px 15px black;
     -webkit-backdrop-filter: blur(3px);
@@ -255,10 +259,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding:100px 30px;
     width: 84%;
     background-color: rgba(19, 61, 40, 0.181);
-    height: 550px;
     border-radius: 20px;
     box-shadow: 2px 2px 20px black;
     box-shadow: -2px -1px 60px rgba(0, 0, 0, 0.277),
@@ -269,15 +272,47 @@ body{
 .about-content>p{
     font-size: 20px;
     font-weight: 450;
-    
+    margin-bottom: 20px;
     text-align: center;
     
     
 }
 .myinfo{
    margin-top: 50px;
+   margin-bottom: 70px;
    width: 100%;
    padding-left: 50px;
+}
+.myinfo h3>span{
+    font-size: 15px;
+    color:rgb(194, 180, 180);
+}
+.iconBox{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+.iconBox>div{
+    padding:0 10px ;
+    border-left: 3px solid rgb(252, 142, 24);
+}
+.iconBox div>span{
+    font-weight: bold;
+    margin-left: 5px;
+}
+.iconBox div>i{
+   padding: 7px;
+   background-color: #14daaf;
+   border-radius: 50%;
+   border-left: 5px solid;
+}
+.about-content>a{
+    margin-top: 20px;
+    color: #007bff;
+    cursor: pointer;
 }
 .about-content, .myinfo h3{
     margin-top: 30px;
@@ -286,6 +321,39 @@ body{
   
 
 }
+.HT{
+    color: black;
+
+}
+/* skills */
+.skillBox{
+    box-shadow: 0 0 7px rgba(8, 8, 8, 0.397);
+    width: 85%;
+    background: #1a25319a;
+    border-radius: 12px; 
+    padding: 50px;
+}
+.skillBox>h1{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.progressBar{
+    height: 20px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: right;
+    overflow: hidden;
+    background-color: #e7d8d8;
+}
+.html{width: 90% ; background-color: #e54d26;}
+.css{width: 80%; background-color: #264de6;}
+.js{width: 65%; background-color: #f7df1d;}
+.react{width: 50%; background-color: #00d1f7;}
+.nodejs{width: 70%; background-color: #7ec72b;}
+
 /* about end */
 /* contact start */
 .contact-me{

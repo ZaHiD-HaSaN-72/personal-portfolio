@@ -24,6 +24,8 @@ timeout = setTimeout(mouseStopped, 1000);
 });
 
 
+//navText color
+
 // const toggleButtons = document.querySelectorAll('.toggle-info');
 //   let cheak = 0;
 // toggleButtons.forEach(button => {
