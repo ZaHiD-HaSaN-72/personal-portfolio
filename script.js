@@ -7,7 +7,7 @@ menuIcon.onclick = () => {
     navbar.classList.toggle("active");
 }
 
-
+// cursor style-------------------------------|
 const cursor = document.getElementById('cursor');
 var timeout;
 document.addEventListener('mousemove' , function(e){
@@ -22,7 +22,7 @@ function mouseStopped(){
 }
 timeout = setTimeout(mouseStopped, 1000);
 });
-
+// cursor style--------------------------------|
 
 //navText color
 
@@ -46,7 +46,7 @@ timeout = setTimeout(mouseStopped, 1000);
 // });
 
 
-//student information
+//student information----------------------------------|
 
 const ApiUrl = ('studenInfo.json');
 const selectStudent = document.getElementById('selectStudent');
@@ -102,4 +102,4 @@ function showModal(){
 Closebtn.addEventListener('click',function(){
     modalBox.style.display = 'none';
 });
-
+// student information--------------------------------|

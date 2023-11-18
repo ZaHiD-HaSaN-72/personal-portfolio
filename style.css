@@ -11,7 +11,7 @@ body{
     color: white;
     
 }
-
+/*----------------- navbar start ------------------------*/
 .navbar{
     width: 100%;
     display: flex;
@@ -30,11 +30,13 @@ body{
     cursor: pointer;
     display: none;
 }
-.navbar>h2{
+#title{
     margin-left: 100px;
+    text-decoration: none;
+    color: #fff;
     font-size:40px;
     font-weight: 700;
-    font-family: sans-serif ;
+    font-family:  fantasy ,sans-serif ;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -52,8 +54,9 @@ body{
 .nav-item a:hover{
    color: cornflowerblue;
 }
+/*---------------------- navbar end --------------------------*/
 
-
+/*---------------------- banner start ------------------------*/
 .banner-box{
     display: flex;
     justify-content: center;
@@ -86,7 +89,7 @@ body{
 }
 .banner-left>p{
  font-size:20px;
- font-weight: 600;
+ font-weight: 400;
 }
 .banner-left h1,p{
     margin-top:30px;
@@ -104,6 +107,7 @@ body{
     /* filter: brightness(70%); */
    
 }
+
 
 .mypng{
     max-height: 500px;
@@ -138,6 +142,9 @@ body{
    
    
 }
+
+/*----------------- banner end ---------------------*/
+
 .send-btn:hover{
    box-shadow:-2px -1px 10px rgb(56, 217, 171) ;
    transition: 0.4s;
@@ -147,6 +154,8 @@ body{
    
    
 }
+
+/*---------------- footer start ---------------------*/
 .footer-box{
     margin-top: 20px;
     padding-top: 30px;
@@ -187,6 +196,7 @@ body{
     font-weight: 400;
 
 }
+
 .my-name{
     opacity: 70%;
     text-transform: uppercase;
@@ -195,11 +205,9 @@ body{
     text-decoration: none;
     color: white;
 }
-/* background animation */
-.bg-img{
-    /* background: url(images/Untitled-1.png); */
-   background-size: cover; 
-}
+
+/*------------ footer end ---------------------*/
+/*------------- background cursor ------------------*/
 
 #cursor{
     position: fixed;
@@ -225,8 +233,8 @@ body{
     z-index:-5;
     opacity: 50%;   
 }
-/* background animation */
-/* about start */
+/*------------------- background cursor -------------------*/
+/*------------------- about start -------------------*/
 .about-box{
     display: flex;
     justify-content: center;
@@ -269,13 +277,29 @@ body{
     inset -2px -1px 25px  rgba(17, 40, 32, 0.2),
     inset -2px -1px 25px rgba(23, 50, 42, 0.497);
 }
+.about-Home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:100px 30px;
+    width: 84%;
+    background-color: rgba(19, 61, 40, 0.181);
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px black;
+    box-shadow: -2px -1px 60px rgba(0, 0, 0, 0.277);
+}
+.about-Home>p{
+    font-size: 20px;
+    font-weight: 450;
+    margin-bottom: 20px;
+    text-align: center;  
+}
 .about-content>p{
     font-size: 20px;
     font-weight: 450;
     margin-bottom: 20px;
-    text-align: center;
-    
-    
+    text-align: center; 
 }
 .myinfo{
    margin-top: 50px;
@@ -309,23 +333,21 @@ body{
    border-radius: 50%;
    border-left: 5px solid;
 }
-.about-content>a{
+.about-Home>a{
     margin-top: 20px;
     color: #007bff;
     cursor: pointer;
 }
-.about-content, .myinfo h3{
+.about-content, .about-Home, .myinfo h3{
     margin-top: 30px;
     font-size: 1.5rem;
     font-weight: 600;
-  
-
 }
 .HT{
     color: black;
 
 }
-/* skills */
+/*------------------ skills ------------------*/
 .skillBox{
     box-shadow: 0 0 7px rgba(8, 8, 8, 0.397);
     width: 85%;
@@ -354,8 +376,8 @@ body{
 .react{width: 50%; background-color: #00d1f7;}
 .nodejs{width: 70%; background-color: #7ec72b;}
 
-/* about end */
-/* contact start */
+/*------------------ about end ------------------*/
+/*------------------ contact start ------------------*/
 .contact-me{
     padding-top: 150px;
     display: flex;
@@ -372,7 +394,7 @@ body{
 }
 .contact-me>p{
     text-align: center;
-    font-size: 17px;
+    font-size: 20px;
     margin: 30px;
 }
 .contact-content{
@@ -387,9 +409,6 @@ body{
 }
 .left-section{
     width: 50%;
-    
- 
-
 }
 .left-section>a{
  
@@ -413,6 +432,7 @@ font-family: Arial, Helvetica, sans-serif;
 }
 .right-section{
 width: 50%;
+color: #fff;
 background-color: rgba(24, 50, 63, 0.225);
 border-radius: 10px;
 padding-top: 20px;
@@ -442,6 +462,7 @@ transition: 0.5s;
     width: 90%;
     border-radius: 5px;
     margin-bottom: 10px;
+    color: #fff;
     background-color: rgba(19, 61, 40, 0.181);
 }
 .right-section>a{
@@ -454,8 +475,8 @@ transition: 0.5s;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
 }
-/* contact end */
-/* service start */
+/*------------------ contact end ------------------*/
+/*------------------ service start ------------------*/
 .services{
     padding-top: 150px;
 }
@@ -477,7 +498,7 @@ transition: 0.5s;
 .services>p{
     margin: 30px auto;
     text-align: center;
-    font-size: 17px;
+    font-size: 20px;
     max-width: 900px;
 }
 .service-content{
@@ -518,10 +539,10 @@ transition: 0.5s;
    
    color: rgb(255, 191, 0);
 }
-/* service end */
+/*------------------ service end ------------------*/
 
 
-/* education start */
+/*------------------ education start ------------------*/
 
 #education {
     margin-top: 40px;
@@ -548,9 +569,6 @@ transition: 0.5s;
     overflow: hidden;
 }
 
-/* .education-details {
-    
-} */
 
 .toggle-info {
     position: absolute;
@@ -569,8 +587,6 @@ transition: 0.5s;
     background-color: #0056b3;
 }
 
-/* Unique Design Styles */
-
 
 .education-entry:hover {
     transform: scale(1.02);
@@ -584,7 +600,7 @@ transition: 0.5s;
 }
 
 .education-details p {
-    font-size: 1.5rem;
+    font-size: 20px;
     color: #ffffff;
 }
 
@@ -635,8 +651,8 @@ transition: 0.5s;
     
     
  }
-/* education end */
-/* studentInformation */
+/*------------------ education end ------------------*/
+/*------------------ studentInformation ------------------*/
 .student-info{
     background-color: rgba(24, 50, 63, 0.225);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -734,8 +750,8 @@ transition: 0.5s;
     border: 1px solid black;
     
 }
-/* studentInformation */
-/* Responsive start */
+/*------------------ studentInformation ------------------*/
+/*------------------ Responsive start ------------------*/
 @media only screen and (max-width:880px){
     .navbar{
         padding-top: 22px;
@@ -770,18 +786,11 @@ transition: 0.5s;
     }
     .banner{
         flex-direction: column-reverse;
-        height: 1000px;
+        height:500px;
     }
     .banner-right{
-        height:340px;
-        background-size: 400px;
-        border: 2px solid black;
-        border-radius: 50%;
-        width: 300px;
-        background-image: url(images/jahid1.png);
-        backdrop-filter: blur(3px);
-        -webkit-backdrop-filter: blur(3px);
-        margin-bottom: 20px;
+        
+        display: none;
      
     }
     .banner-right:hover{
@@ -858,7 +867,7 @@ transition: 0.5s;
     }
     .banner{
         flex-direction: column-reverse;
-        height: 1000px;
+        height: 490px;
     }
     .student-info{
         width: 25rem;
@@ -944,11 +953,12 @@ transition: 0.5s;
     .student-info{
         width: 100vw;
     }
+    .banner{
+        flex-direction: column-reverse;
+        height: 600px;
+    }
     #modalBox{
         width: 100vw;
-    }
-    #popupClose{
-
     }
     .education-box {
         width: 100vw;
@@ -959,3 +969,4 @@ transition: 0.5s;
         font-size: 50px;
     }
 }
+/*------------------ Responsive end ------------------*/
